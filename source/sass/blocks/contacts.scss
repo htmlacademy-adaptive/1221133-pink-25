@@ -1,0 +1,46 @@
+.contacts {
+  text-align: center;
+}
+
+.contacts__list {
+  @include list-clear;
+}
+
+.contacts__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: $color-light-blue;
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: $color-light-blue;
+}
+
+.contacts__link {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $color-pink;
+  text-decoration: none;
+}
+
+.contacts__map {
+  background: url("../img/map.jpg") no-repeat;
+  height: 200px;
+  position: relative;
+}
+
+.contacts__map::after {
+  content: "";
+  height: 155px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  clip-path: polygon(48% 25%, 0 0, 100% 0);
+  background: $color-white;
+}

@@ -1,0 +1,44 @@
+.features {
+  background: $color-silver;
+  padding: 50px 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.features::before {
+  content: "";
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+  background: $color-white;
+}
+
+.features::after {
+  content: "";
+  display: block;
+  height: 275px;
+  background: url("../img/iphone\ screen-3.jpg") 50% 37px no-repeat, url("../img/iphone\ 3.png") 50% 0 no-repeat;
+}
+
+.features__list {
+  @include list-clear;
+  display: flex;
+  flex-direction: column;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: $color-black;
+}
+
+.features__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-light-blue;
+}

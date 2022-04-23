@@ -1,0 +1,66 @@
+.product__wrapper {
+  min-height: 460px;
+  padding: 0 20px;
+  background: url("../img/screen.jpg") 50% 206px no-repeat, url("../img/phone.png") 50% 174px no-repeat, url("../img/back-mobile.jpg") no-repeat;
+}
+
+.product__title {
+  padding-top: 85px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $color-white;
+  margin: 0;
+}
+
+.product_button {
+  display: block;
+  max-width: 280px;
+  margin: 0 auto 35px;
+  padding: 0 35px;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.product__list {
+  @include list-clear;
+  display: flex;
+  justify-content: space-around;
+  max-width: 240px;
+  margin: 0 auto 15px;
+  flex-wrap: wrap;
+}
+
+.product__image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-46%, -56%);
+}
+
+.download-wrapper {
+  background: $color-dark-blue;
+  padding: 25px 20px 17px;
+}
+
+.product__link {
+  display: block;
+  width: 50px;
+  height: 60px;
+  position: relative;
+}
+
+.product__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-white;
+  text-align: center;
+}

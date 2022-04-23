@@ -1,0 +1,41 @@
+.main-navigation__item {
+  background: $color-light-blue;
+  border-top: 1px solid $color-black;
+  box-shadow: 0 1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.main-navigation__link {
+  display: block;
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+}
+
+.main-navigation__list {
+  @include list-clear;
+  text-align: center;
+  display: none;
+}
+
+.main-navigation__menu {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -1px 0 $color-black;
+  padding: 20px;
+}
+
+.main-navigation__toogle {
+  background: none;
+  border: none;
+}
+
+.main-navigation {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
