@@ -1,0 +1,24 @@
+.main-footer__wrapper {
+  padding: 40px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__copyright {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer__copyright-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-light-blue;
+}
+
+.main-footer__copyright-link {
+  background: url("../../img/htmlacademy.svg") no-repeat;
+  height: 34px;
+  width: 27px;
+}
