@@ -1,11 +1,15 @@
-.product__wrapper {
+.product__wrapper-title {
   min-height: 460px;
   padding: 0 20px;
-  background: url("../img/screen.jpg") 50% 206px no-repeat, url("../img/phone.png") 50% 174px no-repeat, url("../img/back-mobile.jpg") no-repeat;
+  background: url("../img/screen.jpg") 50% 206px no-repeat, url("../img/phone.png") 50% 174px no-repeat, url("../img/back-mobile.jpg") 50% no-repeat;
+}
+
+.product {
+  background: $color-dark-blue;
 }
 
 .product__title {
-  padding-top: 85px;
+  padding-top: 88px;
   text-align: center;
   font-size: 24px;
   line-height: 30px;
@@ -14,19 +18,18 @@
   margin: 0;
 }
 
-.product_button {
+.product__button {
   display: block;
-  max-width: 280px;
   margin: 0 auto 35px;
-  padding: 0 35px;
   text-decoration: none;
   border: 3px solid #ffffff;
   border-radius: 25px;
   font-size: 18px;
-  line-height: 50px;
+  line-height: 18px;
   font-weight: 700;
   color: #ffffff;
   box-sizing: border-box;
+  padding: 15px 35px;
 }
 
 .product__list {
@@ -45,9 +48,9 @@
   transform: translate(-46%, -56%);
 }
 
-.download-wrapper {
-  background: $color-dark-blue;
-  padding: 25px 20px 17px;
+.product__download-wrapper {
+  padding: 28px 20px 17px;
+  margin-bottom: 39px;
 }
 
 .product__link {
@@ -63,4 +66,57 @@
   line-height: 24px;
   color: $color-white;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .product__download-wrapper {
+    position: absolute;
+    top: 352px;
+    z-index: 1;
+  }
+
+  .product__download-wrapper::before {
+    content: "";
+    background: url("../../img/screen-phone-tablet.png") 79% 112px no-repeat, url("../img/phone-tablet.png") 97% no-repeat;
+    position: absolute;
+    top: -223px;
+    height: 660px;
+    width: 641px;
+    z-index: -1;
+  }
+
+  .product__title {
+    padding: 205px 7px 4px 27px;
+    width: 245px;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  .product__list {
+    margin: 0 auto 28px;
+  }
+
+  .product__text {
+    font-size: 18px;
+  }
+
+  .product__button {
+    margin: 0 auto 44px;
+    padding: 15px 46px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product__wrapper-title {
+    background: url("../img/back-tablet.jpg") no-repeat;
+    min-height: 731px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__wrapper-title {
+    background: url("../../img/back-desktop@2x.jpg") no-repeat;
+    background-size: contain;
+    min-height: 853px;
+  }
 }

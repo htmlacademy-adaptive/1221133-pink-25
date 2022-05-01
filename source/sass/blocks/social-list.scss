@@ -1,4 +1,10 @@
 .social-list {
   @include list-clear;
   display: flex;
+  flex-wrap: wrap;
+  margin: 32px 0;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 9px;
 }

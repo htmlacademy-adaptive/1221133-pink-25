@@ -5,11 +5,15 @@
   position: relative;
 }
 
+.features-wrapper {
+  margin-top: 40px;
+}
+
 .features::before {
   content: "";
-  height: 18px;
+  height: 32px;
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   clip-path: polygon(0 100%, 0 0, 100% 0);
@@ -34,6 +38,8 @@
   font-size: 18px;
   line-height: 24px;
   color: $color-black;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .features__text {
@@ -41,4 +47,9 @@
   font-size: 14px;
   line-height: 24px;
   color: $color-light-blue;
+}
+
+.features__item {
+  margin-top: -11px;
+  margin-bottom: 26px;
 }
