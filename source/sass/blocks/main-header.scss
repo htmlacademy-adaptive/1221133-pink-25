@@ -1,0 +1,35 @@
+.main-header {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+}
+
+.main-header__logo {
+  line-height: 0;
+}
+
+.main-header__logo-images--visible-phone {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-images--visible-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-images--visible-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

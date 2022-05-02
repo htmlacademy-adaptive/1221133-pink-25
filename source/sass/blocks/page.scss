@@ -4,11 +4,24 @@
   font-family: $font-family;
   line-height: 27px;
   box-sizing: border-box;
+  margin: 0 auto;
+  min-width: $mobile-width;
+  max-width: $desktop-width;
 }
 
-.page-body {
+.page__body {
   min-height: 100%;
   background-color: $color-white;
   margin: 0;
   color: $color-black;
+}
+
+.page__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-light-blue;
+  text-align: center;
+  padding: 68px 20px 55px 20px;
 }

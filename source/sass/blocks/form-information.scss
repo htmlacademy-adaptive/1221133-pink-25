@@ -1,0 +1,160 @@
+@media (min-width: $mobile-width) {
+  .form-information__legend-text--contacts {
+    display: none;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .form-information__fieldset {
+    border: none;
+  }
+}
+
+.form-information__list {
+  @include list-clear;
+}
+
+.form-information__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $color-pink;
+  padding-left: 23px;
+}
+
+.form-information__input {
+  width: 100%;
+  height: 59px;
+  border: 2px solid $color-light-gray;
+  border-radius: 1px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-light-blue;
+}
+
+.form-information__legend {
+  text-align: center;
+}
+
+.form-information__legend-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-pink;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form-information__label-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-light-blue;
+  margin-left: 56px;
+}
+
+.form-information__achievement-wrapper {
+  background: $color-silver;
+  padding-top: 42px;
+}
+
+.form-information__achievement-item {
+  margin-bottom: 58px;
+  position: relative;
+}
+
+.form-information__checkbox-custome {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  border: 2px solid $color-light-gray;
+  border-radius: 1px;
+  background: $color-white;
+}
+
+.form-information__checkbox[type="checkbox"]:checked + .form-information__checkbox-custome {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 60% 49%;
+}
+
+.form-information__platform-wrapper {
+  background: $color-silver;
+}
+
+.form-information__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 197px;
+  border: 2px solid $color-light-gray;
+  border-radius: 1px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-light-blue;
+  text-align: center;
+}
+
+.form-information__submit-wrapper {
+  padding: 0 15px;
+}
+
+.form-information__button {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  padding: 15px 45px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-white;
+  background: $color-green;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.form-information__text {
+  text-align: center;
+}
+
+.form-information__important {
+  color: $color-pink;
+}
+
+//RADIO
+.form-information__platform-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-information__radio-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-light-blue;
+  margin-left: 55px;
+}
+
+.form-information__radio-custome {
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  border-radius: 50%;
+  top: -4px;
+  left: 0;
+  border: 2px solid $color-light-gray;
+  background: $color-white;
+}
+
+.form-information__radio[type="radio"]:checked + .form-information__radio-custome {
+  background-image: url("../../img/Ellipse-small.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 49%;
+}
