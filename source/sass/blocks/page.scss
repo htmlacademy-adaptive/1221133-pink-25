@@ -6,7 +6,6 @@
   box-sizing: border-box;
   margin: 0 auto;
   min-width: $mobile-width;
-  max-width: $desktop-width;
 }
 
 .page__body {
@@ -14,6 +13,7 @@
   background-color: $color-white;
   margin: 0;
   color: $color-black;
+  min-width: 320px;
 }
 
 .page__title {

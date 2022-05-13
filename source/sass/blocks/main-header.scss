@@ -1,13 +1,3 @@
-.main-header {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-}
-
-.main-header__logo {
-  line-height: 0;
-}
-
 .main-header__logo-images--visible-phone {
   @media (min-width: $tablet-width) {
     display: none;
@@ -31,5 +21,17 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+  }
+}
+
+.main-header__logo-images {
+  &:hover {
+    fill: $color-pink;
+    transition: 0.3s;
+  }
+
+  &:active {
+    fill: $color-white;
+    opacity: 0.3;
   }
 }
