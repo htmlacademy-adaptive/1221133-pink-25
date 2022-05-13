@@ -1,5 +1,5 @@
 .main-footer__wrapper {
-  padding: 40px 70px;
+  padding: 26px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,12 +24,13 @@
 .main-footer__copyright {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
     display: flex;
-    padding: 0 20px;
+    padding: 7px 20px;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -39,7 +40,7 @@
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
     display: flex;
-    padding: 36px 70px;
+    padding: 42px 70px;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -53,10 +54,38 @@
   line-height: 18px;
   color: $color-light-blue;
   margin-right: 15px;
+
+  @media (min-width: $desktop-width) {
+    & {
+      font-size: 18px;
+    }
+  }
 }
 
-.main-footer__copyright-link {
-  background: url("../../img/htmlacademy.svg") no-repeat;
-  height: 34px;
-  width: 27px;
+.main-footer__copyright-images {
+  &:hover {
+    fill: $color-black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__logo-images {
+  @media (min-width: $desktop-width) {
+    & {
+      display: none;
+    }
+  }
+}
+
+.main-footer__logo-images--visible-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    & {
+      display: block;
+    }
+  }
 }

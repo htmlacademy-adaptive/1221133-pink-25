@@ -2,9 +2,29 @@
   @include list-clear;
   display: flex;
   flex-wrap: wrap;
-  margin: 32px 0;
+  margin: 28px 0;
 }
 
-.social-list__item:not(:last-child) {
-  margin-right: 9px;
+.social-list__link {
+  width: 51px;
+  height: 51px;
+  border: 3px solid $color-silver;
+  border-radius: 50%;
+  display: block;
+  margin-right: 7px;
+}
+
+.social-list__link--vkontakte {
+  background: url("../../img/social-vk.svg") no-repeat;
+  background-position: 50% center;
+}
+
+.social-list__link--telegram {
+  background: url("../../img/social-telegram.svg") no-repeat;
+  background-position: 50% center;
+}
+
+.social-list__link--youtube {
+  background: url("../../img/social-youtube.svg") no-repeat;
+  background-position: 43% center;
 }

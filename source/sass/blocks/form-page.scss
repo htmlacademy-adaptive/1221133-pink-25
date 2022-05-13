@@ -1,7 +1,20 @@
 .form-page__title-wrapper {
-  min-height: 210px;
+  min-height: 236px;
   padding: 0 20px;
   background: url("../img/back-mobile.jpg") no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background: url("../../img/back-tablet.jpg") no-repeat;
+    background-size: cover;
+    min-height: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../../img/back-desktop@1x.jpg") no-repeat;
+    background-size: cover;
+    min-height: 393px;
+  }
 }
 
 .form-page__title {
@@ -12,4 +25,14 @@
   color: $color-white;
   text-align: center;
   padding-top: 91px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 176px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 169px 60px 0 60px;
+  }
 }
