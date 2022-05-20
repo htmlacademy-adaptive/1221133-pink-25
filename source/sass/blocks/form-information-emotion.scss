@@ -1,0 +1,34 @@
+.form-information__emotion-wrapper {
+  padding: 38px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 38px 20px 39px;
+  }
+}
+
+.form-information__legend-emotion {
+  margin-bottom: 19px;
+}
+
+.form-information__fieldset-emotion {
+  @media (min-width: $tablet-width) {
+    padding: 18px 57px 42px 59px;
+  }
+}
+
+.form-information__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 197px;
+  border: 2px solid $color-light-gray;
+  border-radius: 1px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-light-blue;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    min-height: 125px;
+  }
+}

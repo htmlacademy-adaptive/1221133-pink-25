@@ -1,9 +1,13 @@
+.product__container {
+  min-width: 320px;
+}
+
 .product {
   background-color: $color-dark-blue;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     & {
-      background: url("../../img/phone-hand-mobile.png") 50% 174px no-repeat, url("../../img/back-mobile.jpg") 50% 0% no-repeat;
+      background: url("../img/phone-hand-mobile.png") 50% 174px no-repeat, url("../img/back-mobile.jpg") 50% 0% no-repeat;
       min-height: 462px;
       background-color: $color-dark-blue;
     }
@@ -11,14 +15,14 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     & {
-      background: url("../../img/phone-hand-tablet.png") 50% 185px no-repeat, url("../../img/back-tablet.jpg") no-repeat center / cover;
+      background: url("../img/phone-hand-tablet.png") 50% 185px no-repeat, url("../img/back-tablet.jpg") no-repeat center / cover;
       min-height: 729px;
     }
   }
 
   @media (min-width: $desktop-width) {
     & {
-      background: url("../../img/phone-hand-desktop.png") 97% 209px no-repeat, url("../../img/back-desktop@2x.jpg") no-repeat center / cover;
+      background: url("../img/phone-hand-desktop.png") 97% 209px no-repeat, url("../img/back-desktop@2x.jpg") no-repeat center / cover;
       min-height: 853px;
     }
   }
@@ -99,6 +103,10 @@
     background: $color-white;
     color: $color-pink;
   }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .product__text {
@@ -132,23 +140,6 @@
   @media (min-width: $desktop-width) {
     & {
       margin: 30px 0 44px;
-    }
-  }
-}
-
-.container {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    & {
-      width: 620px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    & {
-      width: 960px;
     }
   }
 }

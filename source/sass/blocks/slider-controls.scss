@@ -21,7 +21,8 @@
   border: 0;
   border-radius: 50%;
   font-style: inherit;
-  background-color: fade($color-dark-blue, 30%);
+  background-color: $color-dark-blue;
+  opacity: 0.3;
   cursor: pointer;
 
   &:not(&--current):hover {
@@ -36,5 +37,14 @@
     box-shadow: 0 0 0 3px $color-dark-blue;
     background-color: transparent;
     cursor: default;
+    opacity: 10;
+  }
+}
+
+.slider-controls--price {
+  @media (min-width: $tablet-width) {
+    & {
+      display: none;
+    }
   }
 }

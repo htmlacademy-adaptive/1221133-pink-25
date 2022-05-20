@@ -1,0 +1,76 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  font: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--rounded {
+    padding: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    line-height: 18px;
+    background-color: transparent;
+  }
+
+  &--squared {
+    padding: 16px 15px;
+    width: 100%;
+    border-radius: 2px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &--red {
+    border-color: $color-pink;
+    color: $color-pink;
+  }
+
+  &--red:hover {
+    color: $color-white;
+    background-color: $color-pink;
+  }
+
+  &--red:active {
+    color: fade($color-white, 30%);
+    background-color: $color-pink;
+  }
+
+  &--gray {
+    border-color: fade($color-dark-blue, 10%);
+    color: $color-light-gray;
+  }
+
+  &--gray:hover {
+    border-color: fade($color-dark-blue, 30%);
+    color: fade($color-dark-blue, 30%);
+  }
+
+  &--gray:active {
+    border-color: fade($color-dark-blue, 0%);
+    color: fade($color-white, 30%);
+    background-color: fade($color-dark-blue, 30%);
+  }
+
+  &--green {
+    color: $color-white;
+    background-color: $color-green;
+  }
+
+  &--green:hover {
+    background-color: #1c9b5e;
+  }
+
+  &--green:active {
+    color: fade($color-white, 30%);
+  }
+
+  &--disabled {
+    background-color: $color-light-gray;
+  }
+}

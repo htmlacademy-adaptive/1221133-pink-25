@@ -1,75 +1,203 @@
 .photo {
-  margin: 0;
-  margin-bottom: 20px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  &--full {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: auto;
+    max-width: 320px;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      max-width: 700px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 1200px;
+    }
+  }
+}
+
+.photo__link {
+  display: block;
+  overflow: hidden;
+  width: 280px;
+  height: 180px;
+  color: $color-white;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
+
+  &--full {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 137px;
+
+    @media (min-width: $tablet-width) {
+      width: 700px;
+      height: 509px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      height: 506px;
+    }
+
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 20px;
+      padding: 6px 20px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      background-color: $color-pink;
+
+      @media (min-width: $tablet-width) {
+        top: 56px;
+        right: 40px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 54px;
+        right: 130px;
+      }
+    }
+  }
+}
+
+.photo__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .photo__content {
   display: flex;
   flex-direction: column;
-  background: $color-silver;
-  margin: 0 20px;
-  padding: 19px 10px 20px 18px;
-}
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 15px 11px 17px 16px;
+  background-color: $color-silver;
 
-.photo__link--photo-day::before {
-  content: "Панорама дня";
-  position: absolute;
-  right: 21px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;
-  padding: 6px 20px;
-  background: $color-pink;
-  color: $color-white;
-  text-transform: uppercase;
-}
+  @media (min-width: $tablet-width) {
+    padding: 23px 32px 24px 27px;
+  }
 
-.photo__date {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 24px;
-  color: $color-dark-blue;
-  text-transform: uppercase;
+  &--full {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding: 24px 29px 13px 27px;
+      width: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 24px 32px 12px 27px;
+      width: 940px;
+    }
+  }
 }
 
 .photo__author {
   margin: 0;
+}
+
+.photo__author-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  color: $color-dark-blue;
+  color: $color-light-blue;
 }
 
-.photo__text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: $color-dark-blue;
-}
-
-.photo__image {
-  display: block;
-  margin: 0 auto;
-}
-
-.photo__like-text {
-  font-weight: 400;
+.photo__date,
+.photo__like-count {
   font-size: 12px;
-  line-height: 24px;
-  color: $color-pink;
   text-transform: uppercase;
 }
 
-.photo__like-button {
-  border: none;
-  background: url("../img/heart.svg") no-repeat;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
+.photo__text {
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-light-blue;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+    min-height: 48px;
+  }
+
+  &--full {
+    @media (min-width: $tablet-width) {
+      order: 2;
+      min-height: auto;
+    }
+  }
 }
 
 .photo__like {
   display: flex;
   align-items: center;
+  margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  &--full {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+}
+
+.photo__like-button {
+  display: block;
+  padding: 0;
+  width: 13px;
+  height: 13px;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.photo__like-count {
+  margin-left: 19px;
+  color: $color-pink;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 17px;
+  }
 }

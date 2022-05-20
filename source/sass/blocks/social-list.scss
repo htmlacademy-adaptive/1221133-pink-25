@@ -12,19 +12,27 @@
   border-radius: 50%;
   display: block;
   margin-right: 7px;
+
+  &:hover {
+    border: 3px solid $color-black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social-list__link--vkontakte {
-  background: url("../../img/social-vk.svg") no-repeat;
+  background: url("../img/social-vk.svg") no-repeat;
   background-position: 50% center;
 }
 
 .social-list__link--telegram {
-  background: url("../../img/social-telegram.svg") no-repeat;
-  background-position: 50% center;
+  background: url("../img/social-telegram.svg") no-repeat;
+  background-position: 45% center;
 }
 
 .social-list__link--youtube {
-  background: url("../../img/social-youtube.svg") no-repeat;
-  background-position: 43% center;
+  background: url("../img/social-youtube.svg") no-repeat;
+  background-position: 50% center;
 }

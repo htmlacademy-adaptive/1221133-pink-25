@@ -1,11 +1,12 @@
 .slider-reviews {
   position: relative;
   padding-top: 29px;
-  padding-bottom: 29px;
+  padding-bottom: 12px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     padding-top: 52px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,8 +16,8 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 185px;
-    padding-bottom: 40px;
-    background-image: url("../../img/icon-quotes.svg");
+    padding-bottom: 155px;
+    background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: 50% 73px;
     background-size: 79px 63px;
@@ -137,7 +138,7 @@
 
 .slider-reviews__slider-controls {
   margin-top: 33px;
-  margin-bottom: 13px;
+  margin-bottom: 47px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
