@@ -19,7 +19,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: -99%;
     width: 27px;
     height: 27px;
     border-bottom: none;
@@ -40,12 +40,12 @@
   }
 
   &--prev::before {
-    left: 7px;
+    left: 14px;
     transform: translateY(-50%) rotate(225deg);
   }
 
   &--next::before {
-    right: 7px;
+    right: 14px;
     transform: translateY(-50%) rotate(45deg);
   }
 }
