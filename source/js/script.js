@@ -33,8 +33,13 @@ bullets.forEach(function (bullet) {
 }
 
 window.addEventListener('resize', function () {
-  let margin = -1 * (document.documentElement.clientWidth - 40) * price + 27;
-  priceTable.style.marginLeft = `${margin}px`;
+  if (document.documentElement.clientWidth < 660) {
+    let margin = -1 * (document.documentElement.clientWidth - 40) * price + 27;
+    priceTable.style.marginLeft = `${margin}px`;
+  }
+  else {
+    priceTable.style.marginLeft = 0;
+  }
 });
 
 if (document.documentElement.clientWidth >= 660) {

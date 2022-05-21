@@ -3,6 +3,16 @@
   display: flex;
   flex-wrap: wrap;
   margin: 28px 0;
+
+  @media (min-width: $desktop-width) {
+    & {
+      margin: 61px 0;
+    }
+  }
+}
+
+.social-list--form {
+  margin: 0;
 }
 
 .social-list__link {

@@ -30,13 +30,13 @@
   }
 
   &:hover::before {
-    border-top-color: fade($color-dark-blue, 60%);
-    border-right-color: fade($color-dark-blue, 60%);
+    border-top-color: rgba(40, 54, 69, 0.6);
+    border-right-color: rgba(40, 54, 69, 0.6);
   }
 
   &:active::before {
-    border-top-color: fade($color-dark-blue, 10%);
-    border-right-color: fade($color-dark-blue, 10%);
+    border-top-color: rgba(40, 54, 69, 0.1);
+    border-right-color: rgba(40, 54, 69, 0.1);
   }
 
   &--prev::before {

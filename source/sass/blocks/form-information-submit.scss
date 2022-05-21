@@ -1,10 +1,19 @@
 .form-information__submit-wrapper {
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 14px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    padding: 0 20px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 0 0 33px;
   }
 }
 

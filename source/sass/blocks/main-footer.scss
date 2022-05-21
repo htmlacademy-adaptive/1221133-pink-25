@@ -31,7 +31,7 @@
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
     display: flex;
-    padding: 36px 70px;
+    padding: 15px 70px;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -54,6 +54,8 @@
 }
 
 .main-footer__copyright-images {
+  fill: $color-pink;
+
   &:hover {
     fill: $color-black;
   }
