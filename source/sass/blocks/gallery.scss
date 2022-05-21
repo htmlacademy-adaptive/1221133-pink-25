@@ -12,17 +12,17 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
     margin-top: 50px;
     width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: -54px;
     padding: 0 10px;
     width: 940px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

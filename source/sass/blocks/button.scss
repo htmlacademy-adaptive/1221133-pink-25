@@ -37,24 +37,25 @@
   }
 
   &--red:active {
-    color: fade($color-white, 30%);
-    background-color: $color-pink;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &--gray {
-    border-color: fade($color-dark-blue, 10%);
-    color: $color-light-gray;
+    border-color: $color-light-blue;
+    color: $color-light-blue;
+    opacity: 0.1;
   }
 
   &--gray:hover {
-    border-color: fade($color-dark-blue, 30%);
-    color: fade($color-dark-blue, 30%);
+    border-color: $color-light-blue;
+    opacity: 0.3;
   }
 
   &--gray:active {
-    border-color: fade($color-dark-blue, 0%);
-    color: fade($color-white, 30%);
-    background-color: fade($color-dark-blue, 30%);
+    border-color: $color-dark-blue;
+    color: $color-white;
+    background-color: $color-dark-blue;
+    opacity: 0.3;
   }
 
   &--green {
@@ -67,7 +68,7 @@
   }
 
   &--green:active {
-    color: fade($color-white, 30%);
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &--disabled {

@@ -48,7 +48,22 @@
 .page__title-catalog {
   padding: 43px 35px 34px;
 
+  @media (min-width: $tablet-width) {
+    padding: 94px 35px 37px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 577px;
+    padding: 93px 0 50px;
+  }
+}
+
+.page__title--filter {
+  @media (min-width: $tablet-width) {
+    padding: 58px 0 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 0 64px;
   }
 }

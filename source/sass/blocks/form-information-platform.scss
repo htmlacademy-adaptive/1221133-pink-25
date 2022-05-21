@@ -54,6 +54,10 @@
   left: 0;
   border: 2px solid $color-light-gray;
   background: $color-white;
+
+  &:hover {
+    border-color: $color-black;
+  }
 }
 
 .form-information__radio[type="radio"]:checked + .form-information__radio-custome {

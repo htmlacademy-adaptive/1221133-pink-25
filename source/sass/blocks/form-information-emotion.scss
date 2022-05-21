@@ -4,6 +4,11 @@
   @media (min-width: $tablet-width) {
     padding: 38px 20px 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 0 34px;
+    width: 940px;
+  }
 }
 
 .form-information__legend-emotion {

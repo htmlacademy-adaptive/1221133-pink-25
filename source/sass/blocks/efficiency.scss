@@ -10,6 +10,12 @@
       display: block;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    & {
+      background: $color-silver;
+    }
+  }
 }
 
 .efficiency__container {
@@ -42,6 +48,9 @@
     & {
       width: 298px;
       height: auto;
+      position: relative;
+      bottom: 14px;
+      left: 9px;
     }
   }
 }
@@ -72,6 +81,7 @@
   @media (min-width: $desktop-width) {
     & {
       width: 570px;
+      padding: 0 12px 62px;
     }
   }
 }

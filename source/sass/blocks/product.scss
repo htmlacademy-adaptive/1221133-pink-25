@@ -3,26 +3,27 @@
 }
 
 .product {
+  background: url("../img/hand-mobile-1@1x.png") 50% 174px no-repeat, url("../img/back-mobile.jpg") 50% 0% no-repeat;
+  min-height: 462px;
   background-color: $color-dark-blue;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     & {
-      background: url("../img/phone-hand-mobile.png") 50% 174px no-repeat, url("../img/back-mobile.jpg") 50% 0% no-repeat;
-      min-height: 462px;
-      background-color: $color-dark-blue;
-    }
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    & {
-      background: url("../img/phone-hand-tablet.png") 50% 185px no-repeat, url("../img/back-tablet.jpg") no-repeat center / cover;
+      background: url("../img/hand-tablet-2@1x.png") 50% 185px no-repeat, url("../img/back-tablet.jpg") no-repeat center / cover;
       min-height: 729px;
     }
   }
 
   @media (min-width: $desktop-width) {
     & {
-      background: url("../img/phone-hand-desktop.png") 97% 209px no-repeat, url("../img/back-desktop@2x.jpg") no-repeat center / cover;
+      background: url("../img/hand-desktop-3@1x.png") 97% 209px no-repeat, url("../img/back-desktop@2x.jpg") no-repeat center / cover;
+      min-height: 853px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    & {
+      background: url("../img/hand-desktop-3@1x.png") 77% 209px no-repeat, url("../img/back-desktop@2x.jpg") no-repeat center / cover;
       min-height: 853px;
     }
   }
@@ -75,33 +76,13 @@
 }
 
 .product__button {
-  display: block;
-  text-align: center;
-  border: 3px solid $color-white;
-  border-radius: 29px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
+  border-color: $color-white;
   color: $color-white;
-  padding: 15px 15px 16px;
-
-  @media (min-width: $tablet-width) {
-    & {
-      margin-bottom: 46px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    & {
-      font-size: 21px;
-      margin-bottom: 68px;
-    }
-  }
 
   &:hover {
     background: $color-white;
     color: $color-pink;
+    border-color: $color-white;
   }
 
   &:active {
