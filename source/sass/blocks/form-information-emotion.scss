@@ -2,11 +2,11 @@
   padding: 38px 20px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 38px 20px 39px;
+    padding: 14px 20px 39px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 38px 0 34px;
+    padding: 12px 0 37px;
     width: 940px;
   }
 }
@@ -32,6 +32,12 @@
   line-height: 30px;
   color: $color-light-blue;
   text-align: center;
+
+  &:focus {
+    outline: 0;
+    border-color: $color-pink;
+    transition: 0.3s;
+  }
 
   @media (min-width: $desktop-width) {
     min-height: 125px;

@@ -54,9 +54,14 @@
   left: 0;
   border: 2px solid $color-light-gray;
   background: $color-white;
+  cursor: pointer;
 
   &:hover {
     border-color: $color-black;
+  }
+
+  &:active {
+    border-color: $color-pink;
   }
 }
 
@@ -64,6 +69,10 @@
   background-image: url("../img/Ellipse-small.svg");
   background-repeat: no-repeat;
   background-position: 50% 49%;
+}
+
+.form-information__radio[type="radio"]:focus + .form-information__radio-custome {
+  border: 2px solid $color-black;
 }
 
 .form-information__fieldset-platform {

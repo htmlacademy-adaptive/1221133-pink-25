@@ -67,6 +67,16 @@
   &:hover {
     border-color: $color-dark-blue;
   }
+
+  &:active {
+    border-color: $color-pink;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $color-pink;
+    transition: 0.3s;
+  }
 }
 
 .form-information__legend {
