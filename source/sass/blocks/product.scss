@@ -11,11 +11,11 @@
       z-index: 1;
       top: -109px;
       height: calc(100% + 120px);
-      background: url("../../img/back-desktop@1x.jpg") no-repeat top left;
+      background: url("../img/back-desktop@1x.jpg") no-repeat top left;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background: url("../../img/back-desktop@2x.jpg") no-repeat top left;
+        background: url("../img/back-desktop@2x.jpg") no-repeat top left;
       }
     }
 
@@ -28,11 +28,11 @@
       bottom: -11px;
       left: 50%;
       transform: translateX(-43%);
-      background: url("../../img/hand-desktop@1x.png") no-repeat top left;
+      background: url("../img/hand-desktop@1x.png") no-repeat top left;
       z-index: 1;
 
       @media (min-resolution: 2dppx) {
-        background: url("../../img/hand-desktop@2x.png") no-repeat top left;
+        background: url("../img/hand-desktop@2x.png") no-repeat top left;
       }
     }
   }
@@ -56,11 +56,11 @@
       z-index: 1;
       top: -110px;
       height: calc(100% + 110px);
-      background: $color-dark-blue url("../../img/back-tablet@1x.jpg") no-repeat top left;
+      background: $color-dark-blue url("../img/back-tablet@1x.jpg") no-repeat top left;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background: $color-dark-blue url("../../img/back-tablet@2x.jpg") no-repeat top left;
+        background: $color-dark-blue url("../img/back-tablet@2x.jpg") no-repeat top left;
       }
     }
 
@@ -73,11 +73,11 @@
       bottom: 0;
       left: 53%;
       transform: translateX(-50%);
-      background: url("../../img/hand-tablet@1x.png") no-repeat top left;
+      background: url("../img/hand-tablet@1x.png") no-repeat top left;
       z-index: 1;
 
       @media (min-resolution: 2dppx) {
-        background: url("../../img/hand-tablet@2x.png") no-repeat top left;
+        background: url("../img/hand-tablet@2x.png") no-repeat top left;
       }
     }
   }
@@ -151,12 +151,12 @@
   position: absolute;
   top: -66px;
   left: 0;
-  background: $color-dark-blue url("../../img/back-mobile@1x.jpg") no-repeat top left;
+  background: $color-dark-blue url("../img/back-mobile@1x.jpg") no-repeat top left;
   background-size: cover;
   z-index: 1;
 
   @media (min-width: $mobile-width) and (min-resolution: 2dppx) {
-    background: $color-dark-blue url("../../img/back-mobile@2x.jpg") no-repeat top left;
+    background: $color-dark-blue url("../img/back-mobile@2x.jpg") no-repeat top left;
   }
 
   @media (min-width: $tablet-width) {
@@ -173,11 +173,11 @@
   bottom: -4px;
   left: 40%;
   transform: translateX(-50%);
-  background: url("../../img/hand-mobile@1x.png") no-repeat top left;
+  background: url("../img/hand-mobile@1x.png") no-repeat top left;
   z-index: 1;
 
   @media (min-width: $mobile-width) and (min-resolution: 2dppx) {
-    background: url("../../img/hand-mobile@2x.png") no-repeat top left;
+    background: url("../img/hand-mobile@2x.png") no-repeat top left;
   }
 
   @media (min-width: $tablet-width) {
