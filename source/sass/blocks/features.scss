@@ -9,7 +9,11 @@
   content: "";
   display: block;
   height: 278px;
-  background: url("../img/features-phone-mobile1x.png") 50% 0 no-repeat;
+  background: url("../img/phone-mobile@1x.png") 50% 0 no-repeat;
+
+  @media (min-width: $mobile-width) and (min-resolution: 2dppx) {
+    background: url("../img/phone-mobile@2x.png") 50% 0 no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     & {
@@ -20,7 +24,13 @@
       display: block;
       height: 480px;
       width: 270px;
-      background: url("../img/features-phone-screen-tablet@1x.png") 50% 0 no-repeat;
+      background: url("../../img/phone-tablet@1x.png") 50% 0 no-repeat;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    & {
+      background: url("../img/phone-tablet@2x.png") 50% 0 no-repeat;
     }
   }
 
@@ -119,6 +129,12 @@
       background: url("../img/iphone-screen-1-desktop@1x.png") 52% 1px no-repeat;
     }
   }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    & {
+      background: url("../img/iphone-screen-1-desktop@2x.png") 52% 1px no-repeat;
+    }
+  }
 }
 
 .features__item--2 {
@@ -127,12 +143,24 @@
       background: url("../img/iphone-screen-2-desktop@1x.png") 68% 0 no-repeat;
     }
   }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    & {
+      background: url("../img/iphone-screen-2-desktop@2x.png") 52% 1px no-repeat;
+    }
+  }
 }
 
 .features__item--3 {
   @media (min-width: $desktop-width) {
     & {
       background: url("../img/iphone-screen-3-desktop@1x.png") 74% 0 no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    & {
+      background: url("../img/iphone-screen-3-desktop@2x.png") 52% 1px no-repeat;
     }
   }
 }
