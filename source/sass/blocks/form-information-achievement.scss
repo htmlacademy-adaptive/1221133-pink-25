@@ -35,10 +35,11 @@
 
 .form-information__achievement-wrapper {
   background: $color-silver;
-  padding: 31px 0 20px;
+  padding: 40px 0 46px;
 
   @media (min-width: $tablet-width) {
     background: $color-white;
+    padding: 33px 0 46px;
   }
 }
 
@@ -63,8 +64,17 @@
   border: 2px solid $color-light-gray;
   border-radius: 1px;
   background: $color-white;
+  cursor: pointer;
 
   &:hover {
+    border-color: $color-black;
+  }
+
+  &:active {
+    border-color: $color-pink;
+  }
+
+  &:focus {
     border-color: $color-black;
   }
 
@@ -78,4 +88,8 @@
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 60% 49%;
+}
+
+.form-information__checkbox[type="checkbox"]:focus + .form-information__checkbox-custome {
+  border: 2px solid $color-black;
 }

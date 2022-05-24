@@ -23,19 +23,20 @@
   line-height: 30px;
   color: $color-light-blue;
   text-align: center;
-  padding: 43px 0 34px;
+  padding: 89px 0 34px;
 
   @media (min-width: $tablet-width) {
     width: 500px;
     margin: 0 auto;
     font-size: 18px;
-    padding: 90px 0 72px;
+    padding: 151px 0 72px;
   }
 
   @media (min-width: $desktop-width) {
     width: 759px;
     margin: 0 auto;
     font-size: 18px;
+    padding: 176px 0 72px;
   }
 }
 
@@ -46,24 +47,26 @@
 }
 
 .page__title-catalog {
-  padding: 43px 35px 34px;
+  padding: 122px 35px 34px;
 
   @media (min-width: $tablet-width) {
-    padding: 94px 35px 37px;
+    padding: 217px 35px 37px;
   }
 
   @media (min-width: $desktop-width) {
     width: 577px;
-    padding: 93px 0 50px;
+    padding: 179px 0 50px;
   }
 }
 
 .page__title--filter {
+  padding: 41px 1px 41px;
+
   @media (min-width: $tablet-width) {
-    padding: 58px 0 72px;
+    padding: 64px 0 72px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 56px 0 64px;
+    padding: 22px 0 67px;
   }
 }
