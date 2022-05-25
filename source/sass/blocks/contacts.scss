@@ -6,7 +6,7 @@
   padding-bottom: 17px;
 }
 
-.contacts__map-image {
+.contacts__image {
   position: absolute;
   width: 100%;
   z-index: -1;
@@ -31,7 +31,7 @@
   @include list-clear;
 }
 
-.map__image {
+.contacts__image-picture {
   width: 100%;
 }
 
