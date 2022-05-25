@@ -106,12 +106,12 @@ return del('build');
 
 const server = (done) => {
 browser.init({
-server: {
-baseDir: 'build'
-},
-cors: true,
-notify: false,
-ui: false,
+  server: {
+    baseDir: 'build'
+  },
+  cors: true,
+  notify: false,
+  ui: false,
 });
 done();
 }
@@ -119,8 +119,8 @@ done();
 // Reload
 
 const reload = (done) => {
-browser.reload();
-done();
+  browser.reload();
+  done();
 }
 
 // Watcher
