@@ -23,13 +23,13 @@
   line-height: 30px;
   color: $color-light-blue;
   text-align: center;
-  padding: 89px 0 34px;
+  padding: 38px 0 34px;
 
   @media (min-width: $tablet-width) {
     width: 500px;
     margin: 0 auto;
     font-size: 18px;
-    padding: 151px 0 72px;
+    padding: 103px 0 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,10 +47,10 @@
 }
 
 .page__title-catalog {
-  padding: 122px 35px 34px;
+  padding: 72px 35px 34px;
 
   @media (min-width: $tablet-width) {
-    padding: 217px 35px 37px;
+    padding: 168px 35px 37px;
   }
 
   @media (min-width: $desktop-width) {

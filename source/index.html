@@ -36,17 +36,17 @@
     <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
 
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+      <ul class="main-nav__site-list">
+        <li class="main-nav__site-list__item main-nav__site-list__item--active">
           <a href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__site-list__item">
           <a href="catalog.html">Фотографии</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__site-list__item">
           <a href="form.html">Конкурс</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__site-list__item">
           <a href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
@@ -124,8 +124,6 @@
   <h2 class="visually-hidden">Эффективность нашего приложения!</h2>
   <div class="efficiency__container container">
 
-    <img class="efficiency__images" src="img/efficiency-images.svg" width="238" height="276" alt="Таймер 24 часа">
-
     <div class="efficiency__description">
 
       <h3 class="efficiency__title">Эффект на 24 часа</h3>
@@ -169,18 +167,18 @@
   </div>
 
   <div class="slider-reviews__slider-controls slider-controls">
-    <button class="slider-controls__button slider-controls__button--current" type="button">
+    <button class="slider-controls__button slider-controls__button--current" type="button" aria-label="Слайд номер 1">
     </button>
-    <button class="slider-controls__button" type="button">
+    <button class="slider-controls__button" type="button" aria-label="Слайд номер 2">
     </button>
-    <button class="slider-controls__button" type="button">
+    <button class="slider-controls__button" type="button" aria-label="Слайд номер 3">
     </button>
   </div>
 
   <div class="slider-reviews__slider-nav slider-nav  container">
-    <button class="slider-nav__slider-button slider-nav__slider-button--prev" type="button">
+    <button class="slider-nav__slider-button slider-nav__slider-button--prev" type="button" aria-label="Следующий слайд">
     </button>
-    <button class="slider-nav__slider-button slider-nav__slider-button--next" type="button">
+    <button class="slider-nav__slider-button slider-nav__slider-button--next" type="button" aria-label="Предыдущий слайд">
     </button>
   </div>
 </section>
@@ -237,14 +235,14 @@
   </div>
 </div>
 
-  <div class="slider-controls slider-controls--price">
-    <button class="slider-controls__button" type="button" data-price="0">
-    </button>
-    <button class="slider-controls__button  slider-controls__button--current" type="button" data-price="1">
-    </button>
-    <button class="slider-controls__button" type="button" data-price="2">
-    </button>
-  </div>
+<div class="slider-reviews__slider-controls slider-controls slider-controls--price">
+  <button class="slider-controls__button" type="button" data-price="0" aria-label="Слайд номер 1">
+  </button>
+  <button class="slider-controls__button  slider-controls__button--current" type="button" data-price="1" aria-label="Слайд номер 2">
+  </button>
+  <button class="slider-controls__button" type="button" data-price="2" aria-label="Слайд номер 3">
+  </button>
+</div>
 
 </section>
 <!-- price -->
@@ -303,7 +301,7 @@
 <!--footer-->
 <footer class="main-footer">
   <div class="main-footer__wrapper container">
-    <a class="main-footer__logo" href="#" aria-label="Логотип сайта Pink">
+    <a class="main-footer__logo" href="index.html" aria-label="Логотип сайта Pink">
       <svg class="main-footer__logo-images" width="145" height="40" viewBox="0 0 145 40">
         <use xlink:href="./img/sprite.svg#footer-logo"></use>
       </svg>

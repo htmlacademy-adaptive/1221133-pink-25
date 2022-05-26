@@ -36,17 +36,17 @@
     <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
 
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+      <ul class="main-nav__list main-nav__site-list">
+        <li class="main-nav__site-list__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="site-list__item site-list__item--active">
+        <li class="main-nav__site-list__item main-nav__site-list__item--active">
           <a href="catalog.html">Фотографии</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__site-list__item">
           <a href="form.html">Конкурс</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__site-list__item">
           <a href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
@@ -261,7 +261,7 @@
 
     <h2 class="visually-hidden">Добавить новую фотографию</h2>
 
-    <div class="photo-editor__form-wrapper container">
+    <div class="photo-editor__form-wrapper">
       <form class="form-photo" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
         <input class="visually-hidden" type="file" id="image" name="image">
         <label class="form-photo__image" for="image" aria-label="Выберите файл"></label>
@@ -346,7 +346,7 @@
 <!--footer-->
 <footer class="main-footer">
   <div class="main-footer__wrapper container">
-    <a class="main-footer__logo" href="#" aria-label="Логотип сайта Pink">
+    <a class="main-footer__logo" href="index.html" aria-label="Логотип сайта Pink">
       <svg class="main-footer__logo-images" width="145" height="40" viewBox="0 0 145 40">
         <use xlink:href="./img/sprite.svg#footer-logo"></use>
       </svg>

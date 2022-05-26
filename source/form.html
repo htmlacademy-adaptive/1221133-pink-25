@@ -36,17 +36,17 @@
     <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
 
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+      <ul class="main-nav__list main-nav__site-list">
+        <li class="main-nav__site-list__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__site-list__item">
           <a href="catalog.html">Фотографии</a>
         </li>
-        <li class="site-list__item site-list__item--active">
+        <li class="main-nav__site-list__item main-nav__site-list__item--active">
           <a href="form.html">Конкурс</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__site-list__item">
           <a href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
@@ -69,18 +69,18 @@
 <form class="form-page__form-information form-information" action="https://echo.htmlacademy.ru/" method="post">
 
   <div class="form-information__name-wrapper container">
-    <fieldset class="form-information__fieldset form-information__fieldset-name">
+    <fieldset class="form-information__fieldset form-information__name-fieldset">
       <ul class="form-information__list">
         <li class="form-information__name-item">
-          <label class="form-information__label form-information__label-name" for="lastname">Фамилия:</label>
+          <label class="form-information__label form-information__name-label" for="lastname">Фамилия:</label>
           <input class="form-information__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *" required>
         </li>
         <li class="form-information__name-item">
-          <label class="form-information__label form-information__label-name" for="name">Имя:</label>
+          <label class="form-information__label form-information__name-label" for="name">Имя:</label>
           <input class="form-information__input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
         </li>
         <li class="form-information__name-item">
-          <label class="form-information__label form-information__label-name" for="fathername">Отчество:</label>
+          <label class="form-information__label form-information__name-label" for="fathername">Отчество:</label>
           <input class="form-information__input" type="text" name="fathername" id="fathername" placeholder="Ну и отчество тоже">
         </li>
       </ul>
@@ -88,11 +88,11 @@
   </div>
 
   <div class="form-information__achievement-wrapper">
-    <fieldset class="form-information__fieldset form-information__fieldset-achievement container">
+    <fieldset class="form-information__fieldset form-information__achievement-fieldset container">
       <legend class="form-information__legend form-information__legend-achievement">
         Ваши безбашенные достижения в путешествии
       </legend>
-      <ul class="form-information__list form-information__list-achievement">
+      <ul class="form-information__list form-information__achievement-list">
         <li class="form-information__achievement-item">
           <label class="form-information__label-checkbox" for="shark">
             <input class="form-information__checkbox visually-hidden" type="checkbox" name="shark" id="shark" checked>
@@ -140,29 +140,29 @@
   </div>
 
   <div class="form-information__contacts-wrapper container">
-    <fieldset class="form-information__fieldset form-information__fieldset-contacts">
-      <legend class="form-information__legend form-information__legend-contacts">
+    <fieldset class="form-information__fieldset form-information__contacts-fieldset">
+      <legend class="form-information__legend form-information__contacts-legend">
         Контактная информация
       </legend>
-      <ul class="form-information__list form-information__list-contacts">
+      <ul class="form-information__list form-information__contacts-list">
         <li class="form-information__contacts-item form-information__contacts-item--phone">
-          <label class="form-information__label form-information__label-contacts" for="phone">Номер телефона</label>
-          <input class="form-information__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+          <label class="form-information__label form-information__contacts-label" for="phone">Номер телефона</label>
+          <input class="form-information__input" type="number" name="phone" id="phone" placeholder="Номер, пожалуйста">
         </li>
         <li class="form-information__contacts-item form-information__contacts-item--mail">
-          <label class="form-information__label form-information__label-contacts" for="mail">Адрес почты</label>
-          <input class="form-information__input" type="text" name="mail" id="mail" placeholder="Введите почту *" required>
+          <label class="form-information__label form-information__contacts-label" for="mail">Адрес почты</label>
+          <input class="form-information__input" type="email" name="mail" id="mail" placeholder="Введите почту *" required>
         </li>
       </ul>
     </fieldset>
   </div>
 
 <div class="form-information__platform-wrapper">
-  <fieldset class="form-information__fieldset form-information__fieldset-platform container">
+  <fieldset class="form-information__fieldset form-information__platform-fieldset container">
     <legend class="form-information__legend form-information__legend-platform">
       С каким приложением путешествовали?
     </legend>
-    <ul class="form-information__list form-information__list-platform">
+    <ul class="form-information__list form-information__platform-list">
       <li class="form-information__platform-item">
         <label class="form-information__label-radio" for="ios">
           <input class="form-information__radio visually-hidden" type="radio" name="platform" id="ios" value="ios" checked>
@@ -189,16 +189,16 @@
 </div>
 
 <div class="form-information__emotion-wrapper container">
-  <fieldset class="form-information__fieldset form-information__fieldset-emotion">
-    <legend class="form-information__legend form-information__legend-emotion">
+  <fieldset class="form-information__fieldset form-information__emotion-fieldset">
+    <legend class="form-information__legend .form-information__emotion-legend">
       ОПИШИТЕ СВОИ ЭМОЦИИ
     </legend>
-    <textarea class="form-information__textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+    <textarea class="form-information__emotion-textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
   </fieldset>
 </div>
 
   <div class="form-information__submit-wrapper container">
-    <button class="form-information__button button button--green" type="submit">Отправить форму</button>
+    <button class="form-information__button button button--green button--disabled" type="submit">Отправить форму</button>
     <p class="form-information__text"><span class="form-information__important">*</span> — обязательные <span class="form-information__submit-hidden">для заполнения</span> поля</p>
   </div>
 </form>
@@ -209,7 +209,7 @@
 <!--footer-->
 <footer class="main-footer">
   <div class="main-footer__wrapper container">
-    <a class="main-footer__logo" href="#" aria-label="Логотип сайта Pink">
+    <a class="main-footer__logo" href="index.html" aria-label="Логотип сайта Pink">
       <svg class="main-footer__logo-images" width="145" height="40" viewBox="0 0 145 40">
         <use xlink:href="./img/sprite.svg#footer-logo"></use>
       </svg>

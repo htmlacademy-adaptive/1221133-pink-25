@@ -20,13 +20,23 @@
 
 .efficiency__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
-  padding: 50px 0 52px;
+  padding: 95px 0 52px;
+
+  @media (min-width: $tablet-width) {
+    & {
+      background-image: url("../../img/efficiency-images.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     & {
-      padding: 41px 0 52px;
+      padding: 113px 0 52px;
+      background-image: url("../../img/efficiency-images-desktop.svg");
+      background-position: 11px 21px;
     }
   }
 }
@@ -104,5 +114,14 @@
       font-size: 18px;
       line-height: 30px;
     }
+  }
+
+  &:hover {
+    color: $color-black;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
   }
 }

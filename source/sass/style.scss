@@ -1,9 +1,9 @@
 // Начните писать стили здесь
-@import "blocks/variables.scss";
-@import "blocks/visually-hidden.scss";
+@import "helpers/variables.scss";
+@import "helpers/visually-hidden.scss";
 @import "blocks/container.scss";
-@import "blocks/mixins.scss";
-@import "blocks/fonts.scss";
+@import "helpers/mixins.scss";
+@import "helpers/fonts.scss";
 @import "blocks/page.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/form-page.scss";
@@ -13,15 +13,10 @@
 @import "blocks/slider-controls.scss";
 @import "blocks/efficiency.scss";
 @import "blocks/form-information.scss";
-@import "blocks/form-information-name.scss";
-@import "blocks/form-information-achievement.scss";
-@import "blocks/form-information-contacts.scss";
-@import "blocks/form-information-platform.scss";
-@import "blocks/form-information-submit.scss";
-@import "blocks/form-information-emotion.scss";
 @import "blocks/main-header.scss";
 @import "blocks/product.scss";
 @import "blocks/contacts.scss";
+@import "blocks/photo-editor.scss";
 @import "blocks/form-photo.scss";
 @import "blocks/modal-form.scss";
 @import "blocks/photo.scss";
