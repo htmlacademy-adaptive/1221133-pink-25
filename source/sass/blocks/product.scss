@@ -15,7 +15,8 @@
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background: url("../img/back-desktop@2x.jpg") no-repeat top left;
+        background: url("../img/back-desktop@2x.jpg") no-repeat;
+        background-size: cover;
       }
     }
 
@@ -33,6 +34,7 @@
 
       @media (min-resolution: 2dppx) {
         background: url("../img/hand-desktop@2x.png") no-repeat top left;
+        background-size: 100%;
       }
     }
   }
@@ -60,7 +62,8 @@
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background: $color-dark-blue url("../img/back-tablet@2x.jpg") no-repeat top left;
+        background: $color-dark-blue url("../img/back-tablet@2x.jpg") no-repeat;
+        background-size: cover;
       }
     }
 
@@ -78,6 +81,7 @@
 
       @media (min-resolution: 2dppx) {
         background: url("../img/hand-tablet@2x.png") no-repeat top left;
+        background-size: 94%;
       }
     }
   }
@@ -156,7 +160,8 @@
   z-index: 1;
 
   @media (min-width: $mobile-width) and (min-resolution: 2dppx) {
-    background: $color-dark-blue url("../img/back-mobile@2x.jpg") no-repeat top left;
+    background: $color-dark-blue url("../img/back-mobile@2x.jpg") no-repeat;
+    background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
@@ -178,6 +183,7 @@
 
   @media (min-width: $mobile-width) and (min-resolution: 2dppx) {
     background: url("../img/hand-mobile@2x.png") no-repeat top left;
+    background-size: 125%;
   }
 
   @media (min-width: $tablet-width) {

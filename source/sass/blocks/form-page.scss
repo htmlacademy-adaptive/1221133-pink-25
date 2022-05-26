@@ -1,27 +1,34 @@
+.form-page__title-wrapper {
+  position: relative;
+}
+
 .form-page__title-wrapper::before {
   content: "";
   width: 100%;
   height: 236px;
   display: block;
   position: absolute;
-  top: 0;
+  top: -66px;
   left: 0;
   background: $color-dark-blue url("../img/back-mobile@1x.jpg") no-repeat top left;
   background-size: cover;
   z-index: -1;
 
   @media (min-width: $mobile-width) and (min-resolution: 2dppx) {
-    background: $color-dark-blue url("../img/back-mobile@2x.jpg") no-repeat top left;
+    background: $color-dark-blue url("../img/back-mobile@2x.jpg") no-repeat;
+    background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
     height: 440px;
+    top: -110px;
     background: $color-dark-blue url("../img/back-tablet@1x.jpg") no-repeat top left;
     background-size: cover;
   }
 
   @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
-    background: $color-dark-blue url("../img/back-tablet@2x.jpg") no-repeat top left;
+    background: $color-dark-blue url("../img/back-tablet@2x.jpg") no-repeat;
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +38,22 @@
   }
 
   @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
-    background: $color-dark-blue url("../img/back-desktop@2x.jpg") no-repeat top left;
+    background: $color-dark-blue url("../img/back-desktop@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.form-page__form-information {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 960px;
+    margin: 0 auto;
   }
 }
 
@@ -44,6 +66,7 @@
   text-align: center;
   padding-top: 25px;
   width: 280px;
+  padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
