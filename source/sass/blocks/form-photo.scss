@@ -4,7 +4,7 @@
   align-items: center;
   box-sizing: border-box;
   padding-top: 20px;
-  padding-bottom: 29px;
+  padding-bottom: 35px;
   background-color: $color-silver;
 
   @media (min-width: $tablet-width) {
@@ -140,7 +140,6 @@
 
 .form-photo__icon {
   display: block;
-  pointer-events: none;
   fill: $color-light-blue;
   opacity: 0.3;
 
@@ -150,6 +149,7 @@
 
   @media (min-width: $tablet-width) {
     opacity: 1;
+    pointer-events: none;
   }
 
   &--crop {

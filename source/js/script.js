@@ -4,7 +4,7 @@ const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 const bullets = document.querySelectorAll('.slider-controls--price .slider-controls__button');
 const mainHeader = document.querySelector('.main-header__container');
-let price = 0;
+let price = 1;
 const priceTable = document.querySelector('.price__table');
 
 navMain.classList.remove('main-nav--nojs');

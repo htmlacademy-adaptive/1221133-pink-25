@@ -80,6 +80,10 @@
   }
 }
 
+.form-information__emotion-legend {
+  margin-bottom: 18px;
+}
+
 .form-information__checkbox-text {
   font-weight: 400;
   font-size: 18px;
@@ -275,7 +279,7 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    padding: 6px 0 28px;
+    padding: 6px 0 25px;
   }
 }
 
@@ -321,13 +325,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 12px 0 37px;
+    padding: 12px 0 28px;
     width: 940px;
   }
-}
-
-.form-information__emotion-legend {
-  margin-bottom: 19px;
 }
 
 .form-information__emotion-fieldset {

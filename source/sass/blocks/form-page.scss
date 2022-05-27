@@ -1,5 +1,9 @@
 .form-page__title-wrapper {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+  }
 }
 
 .form-page__title-wrapper::before {
@@ -32,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 394px;
+    height: calc(100% + 110px);
     background: $color-dark-blue url("../img/back-desktop@1x.jpg") no-repeat top left;
     background-size: cover;
   }
@@ -64,7 +68,7 @@
   line-height: 33px;
   color: $color-white;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 28px;
   width: 280px;
   padding-bottom: 50px;
 
@@ -77,6 +81,6 @@
 
   @media (min-width: $desktop-width) {
     width: 832px;
-    padding: 61px 60px 0;
+    padding: 61px 60px 87px;
   }
 }
