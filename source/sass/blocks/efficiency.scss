@@ -26,7 +26,7 @@
 
   @media (min-width: $tablet-width) {
     & {
-      background-image: url("../../img/efficiency-images.svg");
+      background-image: url("../img/efficiency-images.svg");
       background-repeat: no-repeat;
       background-position: left;
     }
@@ -35,7 +35,7 @@
   @media (min-width: $desktop-width) {
     & {
       padding: 113px 0 52px;
-      background-image: url("../../img/efficiency-images-desktop.svg");
+      background-image: url("../img/efficiency-images-desktop.svg");
       background-position: 11px 21px;
     }
   }
